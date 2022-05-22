@@ -1,0 +1,24 @@
+<html>
+<body onkeydown="moveByPressKey()">       //set sự kiện onkeydown sẽ gọi function 'dichuyenPhim()' - tại body của HTML
+    <form>
+        <img id="myImage"
+             src="https://upload.wikimedia.org/wikipedia/commons/6/6e/Football_%28soccer_ball%29.svg"
+             style="
+                     width: 10%;
+                     left: 0px;
+                     top: 0px;
+                     position: relative
+                    ">                      //nhớ set style ảnh với giá trị left và top: 0px
+                                            //position: relative để có thể tùy biến, di chuyển ảnh được sau
+                                         
+        <p>Ấn <b>nút phía dưới</b> hoặc dùng <b>Phím WASD</b> để di chuyển quả bóng</p>
+        <table>
+            <input type="button" value="Di chuyên Trái" onclick="moveLeft();">
+            <input type="button" value="Di chuyên Lên" onclick="moveUp();">
+            <input type="button" value="Di chuyên Xuống" onclick="moveDown();">
+            <input type="button" value="Di chuyên Phải" onclick="moveRight()">
+        </table>
+        <h1>Sự kiện Chuột và Phím</h1>
+    </form>
+    </body>
+    </html>
